@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Create Goal</title>
+  </head>
+  <body>
+    <header>
+    </header>
+	<main>
+		<form action="goal" method="post">
+			<div class="error">Please fill out a title.</div>
+			<div class="error">Please add an image.</div>
+			<div class="title-group">
+				<label class="title-group__label" for="title">Title</label>
+				<input id="title" class="title-group__field" type="text" name="title-input" placeholder="E.g. Ride a camel">
+			</div>
+			<div class="image-group">
+				<label class="image-group__label" for="image">Add an image</label>
+				<input id="image" class="image-group__field" type="file" name="image-input">
+			</div>
+			<div class="tags-group">
+				<label class="tags-group__label" for="tags">Add tags</label>
+				<input id="tags" class="tags-group__field" type="text" name="tags-input" placeholder="Separate multiple tags with commas">
+			</div>
+			<div class="description-group">
+				<label class="description-group__label" for="description">Add an description</label>
+        <textarea name="comment" row="5" col="50"></textarea>
+			</div>
+			<button type="submit" value="cancel">Cancel</button>
+			<button type="submit" value="goal" >Create Goal</button>
+		</form>
+	</main>
+    <!-- Start footer section -->
+    <footer>
+    </footer>
+  </body>
+</html>

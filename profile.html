@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Create Goal</title>
+  </head>
+  <body>
+    <header>
+    </header>
+	<main>
+		<form action="profile" method="post">
+			<div class="error">Please fill out a name.</div>
+			<div class="error">Please add an image.</div>
+			<div class="name-group">
+				<label class="name-group__label" for="name">Full name</label>
+				<input id="name" class="name-group__field" type="text" name="name-input" placeholder="e.g. Diana Prince">
+			</div>
+			<div class="prof-imag-group">
+				<label class="prof-imag-group__label" for="prof-imag">Profile picture</label>
+				<input id="prof-imag" class="prof-imag-group__field" type="file" name="prof-imag-input">
+			</div>
+      <div class="prof-description-group">
+				<label class="prof-description-group__label" for="prof-description">Add an prof-description</label>
+        <textarea name="prof-comment" row="5" col="50"></textarea>
+			</div>
+			<button type="submit" value="cancel">Cancel</button>
+			<button type="submit" value="update" >Update profile</button>
+		</form>
+	</main>
+    <!-- Start footer section -->
+    <footer>
+    </footer>
+  </body>
+</html>
