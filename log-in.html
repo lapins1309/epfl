@@ -5,27 +5,31 @@
     <title>Log in</title>
   </head>
   <body>
-    <header>
-    </header>
-    <main>
-      <h1>Log in</h1>
-      <p>Not a member? <a href="/">Sign Up</a></p>
-    	<form action="log-in" method="post">
-    		<div class="error">Incorrect email/passward combination</div>
-    		<div class="email-group">
-    			<label class="email-group__label" for="email">Email</label>
-    			<input id="email" class="email-group__field" type="email" name="email-input" placeholder="e.g. diana.prince@wonder.com">
-    		</div>
-    		<div class="password-group">
-    			<label class="password-group__label" for="password">Password</label>
-    			<input id="password" class="password-group__field" type="password" name="password-input">
-    		</div>
-        <a href="/">Forgot password?</a>
-    		<button type="submit">Log in</button>
-    	</form>
-    </main>
-      <!-- Start footer section -->
-    <footer>
-    </footer>
+    <section>
+      <header>
+        <h1 class="title">Log in</h1>
+        <p>Not a member? <a href="sign-up.html">Sign Up</a></p>
+      </header>
+      <main>
+      	<form action="log-in" method="post">
+      		<div class="alert alert-wide">Incorrect email/passward combination</div>
+          <div class="input-group input-group--horisantal">
+            <label class="input-group__label" for="email">Email</label>
+            <input id="email" class="input-group__field" type="email" name="email" placeholder="e.g. diana.prince@wonder.com">
+          </div>
+          <div class="input-group input-group--horisantal">
+            <label class="input-group__label" for="password">Password</label>
+            <input id="password" class="input-group__field" type="password" name="password">
+          </div>
+          <div class="prompt">
+            <a href="forgot-password.html">Forgot password?</a>
+        		<button class="btn btn--primary prompt__confirm" type="submit">Log in</button>
+          </div>
+      	</form>
+      </main>
+        <!-- Start footer section -->
+      <footer>
+      </footer>
+  </section>
   </body>
 </html>

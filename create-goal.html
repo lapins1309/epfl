@@ -9,26 +9,28 @@
     </header>
 	<main>
 		<form action="goal" method="post">
-			<div class="error">Please fill out a title.</div>
-			<div class="error">Please add an image.</div>
-			<div class="title-group">
-				<label class="title-group__label" for="title">Title</label>
-				<input id="title" class="title-group__field" type="text" name="title-input" placeholder="E.g. Ride a camel">
-			</div>
-			<div class="image-group">
-				<label class="image-group__label" for="image">Add an image</label>
-				<input id="image" class="image-group__field" type="file" name="image-input">
-			</div>
-			<div class="tags-group">
-				<label class="tags-group__label" for="tags">Add tags</label>
-				<input id="tags" class="tags-group__field" type="text" name="tags-input" placeholder="Separate multiple tags with commas">
-			</div>
-			<div class="description-group">
-				<label class="description-group__label" for="description">Add an description</label>
-        <textarea name="comment" row="5" col="50"></textarea>
-			</div>
-			<button type="submit" value="cancel">Cancel</button>
-			<button type="submit" value="goal" >Create Goal</button>
+			<div class="alert alert-wide">Please fill out a title.<br>
+			Please add an image.</div>
+      <div class="input-group input-group--horisantal">
+        <label class="input-group__label" for="goal-title">Title</label>
+        <input id="goal-title" class="input-group__field" type="text" name="goal-title" placeholder="E.g. Ride a camel">
+      </div>
+      <div class="input-group input-group--horisantal">
+        <label class="input-group__label" for="goal-image">Add an image</label>
+        <input id="goal-image" class="input-group__field" type="file" name="goal-image">
+      </div>
+      <div class="input-group input-group--horisantal">
+        <label class="input-group__label" for="goal-tags">Add tags</label>
+        <input id="goal-tags" class="input-group__field" type="text" name="goal-tags" placeholder="E.g. Ride a camel">
+      </div>
+      <div class="input-group input-group--horisantal">
+        <label class="input-group__label" for="goal-descripton">Add tags</label>
+        <textarea id="goal-descripton" name="comment" row="5" col="50"></textarea>
+      </div>
+      <div class="prompt">
+        <a class="prompt__cancel" href="/">Cancel</a>
+  			<button class="btn btn--primary prompt__create" type="submit" value="goal" >Create Goal</button>
+      </div>
 		</form>
 	</main>
     <!-- Start footer section -->

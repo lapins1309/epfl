@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <section>
+      <header class="text--center">
+        <h1 class="title">Sign Up</h1>
+        <p>Already a member? <a href="log-in.html">Log in</a></p>
+      </header>
+    	<main>
+    		<form action="sign-up" method="post">
+          <div class="alert alert-wide">List validation messages here.</div>
+          <div class="input-group input-group--horisantal">
+            <label class="input-group__label" for="full-name">Full name</label>
+            <input id="full-name" class="input-group__field" type="text" name="full-name" placeholder="e.g. Diana Prince">
+          </div>
+          <div class="input-group input-group--horisantal">
+            <label class="input-group__label" for="email">Email address</label>
+            <input id="email" class="input-group__field" type="email" name="email" placeholder="e.g. diana.prince@wonder.com">
+          </div>
+          <div class="input-group input-group--horisantal">
+            <label class="input-group__label" for="password">Choose a password</label>
+            <input id="password" class="input-group__field" type="password" name="password">
+          </div>
+          <div class="input-group input-group--horisantal">
+            <label class="input-group__label" for="confirm-password">Retype password</label>
+            <input id="confirm-password" class="input-group__field" type="password" name="confirm-password">
+          </div>
+          <div>
+            <input id="tos" type="checkbox">
+            <label for="tos">By signing up I agree to My Bucket List's <a href="/">Terms of Service</a>.</label>
+          </div>
+          <div class="prompt">
+      			<button class="btn btn--primary prompt__confirm" type="submit">Sign up</button>
+          </div>
+    		</form>
+    	</main>
+      <!-- Start footer section -->
+      <footer>
+      </footer>
+    </section>
+  </body>
+</html>
